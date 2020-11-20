@@ -1,0 +1,13 @@
+# vscode
+.vscode
+
+# node.js
+node_modules
+.node-version
+
+# python
+.python-version
+.cache
+
+# dist
+dist
