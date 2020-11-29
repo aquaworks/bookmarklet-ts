@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "build": "npx parcel build src/index.ts --no-source-maps",
+    "build": "rm -rf ./dist && npx parcel build src/index.ts --no-source-maps",
     "build:bookmarklet": "sed -e '1s/^/javascript:/' ./dist/index.js | tr -d '\n' > dist/index.bookmarklet.js",
     "server": "python server/server.py",
     "watch": "npx parcel watch src/index.ts --no-source-maps"
